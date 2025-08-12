@@ -1,0 +1,13 @@
+<nav aria-label="Primary">
+  <a routerLink="/" routerLinkActive="active"
+    #rlaHome="routerLinkActive"
+    [attr.aria-current]="rlaHome.isActive ? 'page' : null">Home</a>
+
+  <a routerLink="/pricing" routerLinkActive="active"
+      #rlaPricing="routerLinkActive"
+      [attr.aria-current]="rlaPricing.isActive ? 'page' : null">Pricing</a>
+
+  <a routerLink="/portal" routerLinkActive="active"
+      #rlaPortal="routerLinkActive"
+      [attr.aria-current]="rlaPortal.isActive ? 'page' : null">Portal</a>
+</nav>

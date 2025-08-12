@@ -1,11 +1,15 @@
 import { Component, signal } from '@angular/core';
-import { HomeComponent } from './features/home/home.component';
+import { RouterOutlet } from '@angular/router';
+import { PrimaryNavComponent } from './layouts/primary-nav/primary-nav.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HomeComponent],
+  standalone: true,
+  imports: [RouterOutlet, PrimaryNavComponent],
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('client');
+  protected readonly title = signal('PropX');
 }
+
+// changeDetection: ChangeDetectionStrategy.OnPush

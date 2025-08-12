@@ -1,4 +1,12 @@
-<div class="video-container flex justify-center ">
+<section role="banner" aria-labelledby="hero-h">
+  <h1 id="hero-h">Prop Firm Promise</h1>
+  <p>Pass evaluations, track risk, and get paid on your schedule</p>
+  <button [routerLink]="'/pricing'">
+    Pricing
+  </button>
+  <button [routerLink]="'/portal'"></button>
+
+  <div class="video-container flex justify-center ">
   <video
     autoplay=""
     loop=""
@@ -10,3 +18,5 @@
     <source src="assets/hero.mp4" type="video/mp4" />
   </video>
 </div>
+
+</section>
