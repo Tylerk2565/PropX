@@ -1,12 +1,23 @@
-<header class="site-header">
-  <h1 class="site-brand">PropX</h1>
-  <app-primary-nav/>
+<header>
+  <nav class="nav">
+
+    <a routerLink="/" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/faq" routerLinkActive="active">FAQ</a>
+
+
+    <!-- Todo: Add ng if for if the user is logged in or not -->
+    
+  </nav>
 </header>
 
-<main id="main" role="main" tabindex="-1">
-  <router-outlet/>
+
+<main>
+  <router-outlet></router-outlet>
 </main>
 
-<footer class="site-footer">
-  <small>&copy; PropX</small>
+
+<footer>
+  <p>&copy; Temp Footer</p>
 </footer>

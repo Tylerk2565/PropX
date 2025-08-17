@@ -1,0 +1,17 @@
+/* Navigation */
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a.active,
+.nav a.focus,
+.nav a.hover {
+  text-decoration: underline;
+}

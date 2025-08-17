@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from './components/hero/hero.component';
-import { HomePlatformsComponent } from './components/home-platforms/home-platforms.component';
+import { HomeBtnBlueComponent } from './home-btn-blue/home-btn-blue.component';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent, HomePlatformsComponent],
+  imports: [HomeBtnBlueComponent],
   templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
