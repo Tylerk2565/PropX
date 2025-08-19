@@ -1,1 +1,40 @@
-<p>navbar works!</p>
+<header>
+  <nav class="nav">
+    <a routerLink="/" class="nav-logo">PropX</a>
+    <!-- Desktop Navigation -->
+    <ul class="nav-links">
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li><a routerLink="/faq" routerLinkActive="active">FAQ</a></li>
+    </ul>
+
+    <!-- Todo: Add ng if for if the user is logged in or not -->
+    <div class="nav-btns">
+      <button class="nav-signup-btn">Sign up</button>
+      <button class="nav-dashboard-btn">Dashboard</button>
+    </div>
+
+    <!-- Mobile Bottom Hamburger Menu -->
+    <button
+      class="hamburger-btn"
+      type="button"
+      (click)="toggleHamburger()"
+      [attr.aria-expanded]="isOpen()"
+    >
+      {{ isOpen() ? "X" : "=" }}
+      Navigation 
+    </button>
+
+    @if (isOpen()) {
+    <ul class="nav-hamburger" [attr.aria-hidden]="!isOpen()">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a routerLink="/faq">FAQ</a></li>
+      <li><button id="hamburger-signup-btn">Sign up</button></li>
+      <li><button id="hamburger-dashboard-btn">Dashboard</button></li>
+    </ul>
+    }
+  </nav>
+</header>
