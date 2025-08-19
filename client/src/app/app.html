@@ -1,24 +1,6 @@
-<header>
-  <nav class="nav">
-    <a routerLink="/" class="nav-logo">Logo</a>
-
-    <ul class="nav-links"> 
-      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-      <li><a routerLink="/faq" routerLinkActive="active">FAQ</a></li>
-    </ul>
-
-    <!-- Todo: Add ng if for if the user is logged in or not -->
-    <div class="nav-btns">
-      <button id="nav-signup-btn">Sign up</button>
-      <button id="nav-dashboard-btn">Dashboard</button>
-    </div>
-  </nav>
-</header>
-
+<app-navbar/>
 <main>
-  <router-outlet></router-outlet>
+  <router-outlet/>
 </main>
 
 <footer>

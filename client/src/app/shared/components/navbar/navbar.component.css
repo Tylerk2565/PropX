@@ -1,0 +1,78 @@
+/* Hide desktop nav on small screens */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.25rem; 
+  color: white;
+}
+ 
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-logo {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.hamburger-btn,
+.nav-hamburger {
+  display: none;
+}
+
+.hamburger-btn {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 200px;
+}
+
+/* Mobile & Tablet */
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  .nav-btns {
+    display: none;
+  }
+  .nav-hamburger {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    width: 200px;
+    z-index: 1000;
+    height: 400px;
+    background-color: gray;
+  }
+  .nav-hamburger a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+  }
+  .nav-hamburger li {
+    list-style-type: none;
+  }
+}
+
