@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { HomeBtnBlueComponent } from './home-btn-blue/home-btn-blue.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HomeBtnBlueComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
